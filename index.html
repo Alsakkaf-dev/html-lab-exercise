@@ -1,104 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Mohammed Alsakkaf | Portfolio</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Personal portfolio">
-    </head>
 
-    <body>
-        <header>
-            <h1>Mohammed Alsakkaf</h1>
-            <p>UTM Software Engineering Student</p>
-        </header>
+<head>
+    <title>Mohammed Alsakkaf | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal portfolio">
+</head>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">My Skills</a></li>
-                <li><a href="#academic">Acadmic Record</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+<body>
+    <header>
+        <h1>Mohammed Alsakkaf</h1>
+        <p>UTM Software Engineering Student</p>
+    </header>
 
-        <main>
-            <section id="about">
-                <!--for the difference between the <strong & <em> & <b> & <i>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">My Skills</a></li>
+            <li><a href="#academic">Acadmic Record</a></li>
+            <li><a href="#projects">Projects & Media</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+<!--About Section-->
+        <section id="about">
+            <!--for the difference between the <strong & <em> & <b> & <i>
                     <strong> and <em> provide semantic meaning like importance or emphasis for screen readers
                     
                         and for the <b> and <i> are purely stylistic or visual and do not add extra importance
                     >-->
-                <h2>About Me</h2>
-                <p>
-                    I am a <dfn>Software Engineering</dfn> student at <strong>UTM</strong>
-                    I am <em>highly motivated</em> to build <b>robust</b> and <i>scalable</i> applications 
-                </p>
+            <h2>About Me</h2>
+            <p>
+                I am a <dfn>Software Engineering</dfn> student at <strong>UTM</strong>
+                I am <em>highly motivated</em> to build <b>robust</b> and <i>scalable</i> applications
+            </p>
 
 
 
 
 
-                <h3>My Education Journey</h3>
-                <p>
-                    <!--here I used <sup> tag for the "th" so that this "th" will be in the top of the number 4
+            <h3>My Education Journey</h3>
+            <p>
+                <!--here I used <sup> tag for the "th" so that this "th" will be in the top of the number 4
                         
                         
                         -->
-                    I am currently in my 4<sup>th</sup> semester, focusing on building my technical foundation.
-                    One of my favorite subjects is <abbr title="Data Structures and Algorithms">DSA</abbr>. 
-                </p>
-                   
-
-
-
-                <h4>A Quote that Inspires Me</h4>
-                <blockquote cite="https://www.brainyquote.com/quotes/nelson_mandela_378967">
-                   <p>"It always seems impossible until it's done."</p>
-                   <cite>Nelson Mandela</cite>
-                </blockquote>
-
-                
+                I am currently in my 4<sup>th</sup> semester, focusing on building my technical foundation.
+                One of my favorite subjects is <abbr title="Data Structures and Algorithms">DSA</abbr>.
+            </p>
 
 
 
 
+            <h4>A Quote that Inspires Me</h4>
+            <blockquote cite="https://www.brainyquote.com/quotes/nelson_mandela_378967">
+                <p>"It always seems impossible until it's done."</p>
+                <cite>Nelson Mandela</cite>
+            </blockquote>
 
-                <p>
-                    <!--here I used <sub> instaed of sup so that instead of making the '2' down so with using the <sub> we making it down the letter H -->                    
-                    I often <mark>study late into the night</mark> to ensure I understand the logic behind the code. 
-                    (Water intake: H<sub>2</sub>O is essential for focus!)
-                </p>
+            <p>
+                <!--here I used <sub> instaed of sup so that instead of making the '2' down so with using the <sub> we making it down the letter H -->
+                I often <mark>study late into the night</mark> to ensure I understand the logic behind the code.
+                (Water intake: H<sub>2</sub>O is essential for focus!)
+            </p>
 
-            </section>
+        </section>
 
-
-            <section id="skills"><!-- Content for Task 3 goes here --></section>
-        </main>
+    
 
 
 
 
 
+ <!--Skills Section-->    
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+
+            
+            
+            <!-- Roman Numerals and Start attribute -->
+            <h3>Top Skills</h3>
+            <ol type="I" start="1">
+                <li>Software Design</li>
+                <li>Problem Solving</li>
+                <li>Database Management</li>
+            </ol>
+
+            
+            
+            <!-- Nested list -->
+            <h3>Technologies I Use</h3>
+            <ul>
+                <li>Frontend Development
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3 (Learning)</li>
+                    </ul>
+                </li>
+                <li>Backend: Java & C++</li>
+            </ul>
+
+
+
+            <!--  <dl> with 4 pairs -->
+            <h3>Web Development Glossary</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language used for structuring web pages.</dd>
+
+                <dt>Browser</dt>
+                <dd>A software application for accessing information on the World Wide Web.</dd>
+
+                <dt>Tag</dt>
+                <dd>The hidden keywords within a web page that define how the browser must format and display the
+                    content.</dd>
+
+                <dt>Semantic HTML</dt>
+                <dd>The use of HTML markup to reinforce the semantics, or meaning, of the information in web pages.</dd>
+            </dl>
+
+
+            <!-- 'reversed' attribute -->
+            <h3>Project Countdown</h3>
+            <ol reversed>
+                <li>Final Submission</li>
+                <li>Testing Phase</li>
+                <li>Development Phase</li>
+            </ol>
+        </section>
+    </main>
 
 
 
 
 
 
+    <footer>
+        <address>
+            Contact me at:
+            <a href="mohammed.alsakkaaf@gmail.com">mohammed.alsakkaf@gmail.com</a>
+            <a href="https://alsakkaf.site/">Alsakkaf.site</a>
+            Address: Desa Skudai Apartment, Johor, Malaysia
+        </address>
+        <herf <p><small>&copy; 2026 Mohammed Alsakkaf. All rights reserved.</small></p>
+    </footer>
 
 
+</body>
 
-        
-        <footer> 
-            <address>
-                Contact me at: 
-                <a href="mohammed.alsakkaaf@gmail.com">mohammed.alsakkaf@gmail.com</a>
-                <a href="https://alsakkaf.site/">Alsakkaf.site</a>
-                Address: Desa Skudai Apartment, Johor, Malaysia</address>
-            <herf 
-            <p><small>&copy; 2026 Mohammed Alsakkaf. All rights reserved.</small></p>
-        </footer>
-
-
-    </body>
 </html>
