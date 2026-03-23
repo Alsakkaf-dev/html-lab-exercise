@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--/////////////////////////////////////  head  //////////////////////////////////////-->
+
+<head>
+    <title>Mohammed Alsakkaf | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal portfolio">
+</head>
+<!--/////////////////////////////////////  End of head  //////////////////////////////////////-->
+
+
+
+<!--/////////////////////////////////////  Body  //////////////////////////////////////-->
+
+<body>
+    <header>
+        <h1>Mohammed Alsakkaf</h1>
+        <p>UTM Software Engineering Student</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">My Skills</a></li>
+            <li><a href="academic.html">Acadmic Record</a></li>
+            <li><a href="projects.html">Projects & Media</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!--/////////////////////////////////////  Main  //////////////////////////////////////-->
+    <main>
+        <!--/////////////////////////////////////  Academic Section  //////////////////////////////////////-->
+
+
+        <!-- I will follow this structure to do the Task 4
+        
+        Task 4.1: Section & Table Shell (The outer container).
+        Task 4.2: Table Caption.
+        Task 4.3: The Header (<thead>) with Colspan.
+        Task 4.4: Semester 1 Data (6 courses + Rowspan).
+        Task 4.5: Semester 2 Data (6 courses + Rowspan).
+        Task 4.6: Semester 3 Data (6 courses + Rowspan).
+        Task 4.7: The Footer (<tfoot>) with Totals. -->
+
+        <!-- Task 4: Academic Results Section -->
+        <section id="academic">
+            <h2>Academic Record</h2>
+
+            <!-- Task 4.1: Table Container & Presentation Attributes -->
+            <table border="1" cellpadding="10" cellspacing="0">
+
+                <!-- Task 4.2: Table Caption (Accessibility) -->
+                <caption>Transcript of Academic Results: Semesters 1, 2 & 3</caption>
+
+                <!-- Task 4.3: The Header (thead) with Colspan & Scope -->
+                <thead>
+                    <tr>
+                        <!-- colspan="2" merges the first two columns for the header -->
+                        <th scope="col" colspan="2">Course Module & Information</th>
+                        <th scope="col">Credit Hours</th>
+                        <th scope="col">Final Grade</th>
+                    </tr>
+                </thead>
+                
+                <!-- Task 4.4: Semester 1 Data (tbody) with Rowspan & Row Headers -->
+                <tbody>
+                    <tr>
+                        <!-- rowspan="6" merges this header for all 6 courses in Semester 1 -->
+                        <th scope="row" rowspan="6">Semester 1</th>
+                        <td>Integrity and Anti-Corruption Course</td>
+                        <td>2</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>Digital Logic</td>
+                        <td>3</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Mathematics for Software Engineer</td>
+                        <td>3</td>
+                        <td>D+</td>
+                    </tr>
+                    <tr>
+                        <td>English Communication Skills</td>
+                        <td>2</td>
+                        <td>HL</td>
+                    </tr>
+                    <tr>
+                        <td>Database Engineering</td>
+                        <td>3</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Fundamental Programming Concepts</td>
+                        <td>3</td>
+                        <td>C</td>
+                    </tr>
+                    
+                    <!-- Task 4.5: Semester 2 Data with Rowspan & Row Headers -->
+                    <tr>
+                        <th scope="row" rowspan="6">Semester 2</th>
+                        <td>Network Communications</td>
+                        <td>3</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Organization and Architecture</td>
+                        <td>3</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Probability and Statistical Data Analysis</td>
+                        <td>3</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Programming</td>
+                        <td>4</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Malay Language for Communication 2</td>
+                        <td>2</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>Software Engineering Principles</td>
+                        <td>3</td>
+                        <td>B</td>
+                    </tr>
+                    
+                    <!-- Task 4.6: Semester 3 Data with Rowspan & Row Headers -->
+                    <tr>
+                        <th scope="row" rowspan="6">Semester 3</th>
+                        <td>Data Structure and Algorithm</td>
+                        <td>3</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>Software Requirements Engineering</td>
+                        <td>3</td>
+                        <td>C+</td>
+                    </tr>
+                    <tr>
+                        <td>Software Process and Project Management</td>
+                        <td>3</td>
+                        <td>B-</td>
+                    </tr>
+                    <tr>
+                        <td>Human Computer Interaction Fundamentals</td>
+                        <td>3</td>
+                        <td>B-</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Systems</td>
+                        <td>3</td>
+                        <td>A-</td>
+                    </tr>
+                    <tr>
+                        <td>Football</td>
+                        <td>2</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+                </tbody>
+
+                <!-- Task 4.7: The Footer (tfoot) with Summary & Strong tags -->
+                <tfoot>
+                    <tr>
+                        <!-- colspan="3" merges the Semester, Course, and Credit columns -->
+                        <td colspan="3">Total Credit Hours Earned</td>
+                        <td><strong>45</strong></td>
+                    </tr>
+                    <tr>
+                        <!-- This second footer row shows the average (CGPA) -->
+                        <td colspan="3">Current Cumulative Grade Point Average (CGPA)</td>
+                        <td><strong>2.48</strong></td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </section>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!--/////////////////////////////////////  End of Main  //////////////////////////////////////-->
+</body>
+<!--/////////////////////////////////////  End of Body  //////////////////////////////////////-->
+
+
+
+
+
+
+<!--/////////////////////////////////////  Footer  //////////////////////////////////////-->
+<footer>
+    <address>
+        Contact me at:<br>
+        <a href="mailto:mohammed.alsakkaaf@gmail.com">mohammed.alsakkaaf@gmail.com</a>
+        <br><a href="https://alsakkaf.site/">Alsakkaf.site</a><br>
+        Address: Desa Skudai Apartment, Johor, Malaysia
+    </address>
+    <p><small>&copy; 2026 Mohammed Alsakkaf. All rights reserved.</small></p>
+</footer>
+<!--/////////////////////////////////////  Footer  //////////////////////////////////////-->
+
+
+
+</html>
