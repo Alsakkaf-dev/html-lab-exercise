@@ -62,8 +62,22 @@
 
                 <fieldset style="border: 2px solid rgb(4, 4, 157); padding: 15px; margin-bottom: 20px;">
                     <legend style="font-weight: bold; font-size: 1.2em; color: navy;">Inquiry Details</legend>
-                </fieldset>
 
+                    <p>
+                        <label for="subject">Subject:</label><br>
+                        <select id="subject" name="subject" style="width: 100%; padding: 8px; margin-top: 5px;">
+                            <optgroup label="General">
+                                <option value="collaboration">Collaboration</option>
+                                <option value="hiring">Hiring / Internship</option>
+                            </optgroup>
+                            <optgroup label="Technical">
+                                <option value="feedback">Website Feedback</option>
+                                <option value="bug">Report a Bug</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                </fieldset>
 
 
             </form>
