@@ -27,7 +27,7 @@
             <li><a href="skills.html">My Skills</a></li>
             <li><a href="academic.html">Academic Record</a></li>
             <li><a href="projects.html">Projects & Media</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="contact.html" class="active">Contact Me</a></li>
         </ul>
     </nav>
 
@@ -46,14 +46,12 @@
                         maxlength="60">
                     <p>
                         <label for="email">Email Address:</label><br>
-                        <input type="email" id="email" name="email" placeholder="example@mail.com" required
-                            style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
                     </p>
 
-                    <p>
+                   <p>
                         <label for="phone">Phone Number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="+60123456789"
-                            style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <input type="tel" id="phone" name="phone" placeholder="+60123456789">
                     </p>
                     <p>
                         <label for="years">Years of Experience:</label><br>
@@ -62,12 +60,12 @@
 
                 </fieldset>
 
-                <fieldset style="border: 2px solid rgb(4, 4, 157); padding: 15px; margin-bottom: 20px;">
-                    <legend style="font-weight: bold; font-size: 1.2em; color: navy;">Inquiry Details</legend>
+                <fieldset>
+                   <legend>Inquiry Details</legend>
 
                     <p>
                         <label for="subject">Subject:</label><br>
-                        <select id="subject" name="subject" style="width: 100%; padding: 8px; margin-top: 5px;">
+                        <select id="subject" name="subject">
                             <optgroup label="General">
                                 <option value="collaboration">Collaboration</option>
                                 <option value="hiring">Hiring / Internship</option>
@@ -110,17 +108,13 @@
                     </p>
                     <p>
                         <label for="message">Your Message:</label><br>
-                        <textarea id="message" name="message" rows="5"
-                            style="width: 100%; padding: 8px; margin-top: 5px;"
-                            placeholder="Write your message here..."></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
                     </p>
 
 
                 </fieldset>
 
-                <button type="submit"
-                    style="background-color: navy; color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px;">Send
-                    Message</button>
+                <button type="submit">Send Message</button>
 
 
             </form>
