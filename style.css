@@ -80,11 +80,15 @@ body {
 
 /*--------------------------------------------------- Task 2 ---------------------*/
     
-        header {
+            header {
         background-color: var(--color-primary);
         color: var(--color-white);
-        padding: var(--space-lg); /* Padding used for internal space inside the header */
-        }
+        padding: var(--space-lg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+         }
 
         nav {
         background-color: var(--color-secondary);
