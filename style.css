@@ -16,3 +16,21 @@
     --space-md: 1.6rem;
     --space-lg: 3.2rem;
 }
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    background-color: var(--color-white);
+    line-height: 1.6;
+    font-size: 1.6rem;
+}
