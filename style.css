@@ -312,3 +312,29 @@ h2::after {
     background-color: var(--color-accent);
     margin-top: 0.5rem;
 }
+
+/* Alternating row colors for the academic results table */
+tbody tr:nth-child(even) {
+    background-color: var(--color-grey-light);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--space-lg);
+}
+
+th, td {
+    padding: var(--space-md);
+    text-align: left;
+    border: 1px solid var(--color-grey-mid);
+}
+
+/* Remove top border of first item and bottom border of last item in a list */
+nav ul li:first-child a {
+    border-top: none;
+}
+
+nav ul li:last-child a {
+    border-bottom: none;
+}
