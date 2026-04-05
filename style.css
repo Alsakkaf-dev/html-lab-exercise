@@ -232,3 +232,13 @@ img {
         grid-template-columns: repeat(2, 1fr); /* 2 columns for cards */
     }
 }
+
+@media (min-width: 1024px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sidebar-layout {
+        grid-template-columns: 1fr 280px;
+    }
+}
