@@ -215,3 +215,20 @@ img {
     height: auto;
     display: block;
 }
+
+@media (min-width: 600px) {
+    nav ul {
+        flex-direction: row; /* Spread links horizontally on tablets */
+        justify-content: center;
+    }
+
+    header {
+        flex-direction: row; /* Name on left, tagline on right */
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for cards */
+    }
+}
