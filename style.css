@@ -192,3 +192,11 @@ body {
     gap: var(--space-lg);
     align-items: start;
 }
+
+.featured {
+    grid-column: span 2;
+}
+
+.card-grid {
+    align-items: stretch;
+}
