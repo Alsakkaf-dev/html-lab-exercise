@@ -274,3 +274,41 @@ legend {
     padding: 0 var(--space-sm);
     color: var(--color-primary);
 }
+
+button[type="submit"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-sm) var(--space-lg);
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-secondary);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.97);
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    color: var(--color-accent);
+    line-height: 0;
+    vertical-align: -1.5rem;
+    margin-right: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.4rem;
+    background-color: var(--color-accent);
+    margin-top: 0.5rem;
+}
