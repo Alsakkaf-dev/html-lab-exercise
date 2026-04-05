@@ -87,14 +87,15 @@ body {
 /*--------------------------------------------------- Task 2 ---------------------*/
     
         header {
-        background-color: var(--color-primary);
-        color: var(--color-white);
-        padding: var(--space-lg);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-         }
+          background-color: var(--color-primary);
+          color: var(--color-white);
+          padding: var(--space-lg);
+          display: flex;
+          flex-direction: column; /* Stack name and tagline on mobile */
+          align-items: center;
+          text-align: center;
+          gap: var(--space-sm);
+       }
 
         nav {
         background-color: var(--color-secondary);
@@ -153,10 +154,10 @@ body {
     }
 
     nav ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: var(--space-md);
+      display: flex;
+      flex-direction: column; /* Stack links vertically on mobile */
+      align-items: center;
+      gap: var(--space-sm);
     }
 
     nav a {
