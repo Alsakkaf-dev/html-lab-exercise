@@ -136,5 +136,22 @@ body {
 
 
 /*--------------------------------------- Task 3 ---------------------*/
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
 
-     
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--space-md);
+    }
+
+    nav a {
+        display: block;
+        padding: var(--space-sm) 
+    }
+
+    
