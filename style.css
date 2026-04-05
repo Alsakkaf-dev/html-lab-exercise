@@ -73,4 +73,31 @@ body {
     font-weight: 600;
     margin-bottom: var(--space-sm);
     }
-/*-----------------Task 1 - Completed ---------------------//
+
+    
+        header {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        padding: var(--space-lg); /* Padding used for internal space inside the header */
+        }
+
+        nav {
+        background-color: var(--color-secondary);
+        padding: var(--space-sm); /* Padding used to create space around the nav links */
+        }
+
+        main {
+        padding: var(--space-lg); /* Padding used to keep content away from the screen edges */
+        }
+
+        section {
+        margin-bottom: var(--space-lg); /* Margin used to create external space between sections */
+        }
+
+        footer {
+        background-color: var(--color-grey-light);
+        padding: var(--space-lg); /* Padding used for internal spacing within the footer */
+        border-top: 1px solid var(--color-grey-mid);
+        }
+
+     
