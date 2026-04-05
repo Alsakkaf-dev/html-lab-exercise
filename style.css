@@ -244,3 +244,33 @@ img {
     }
 }
 /*----------------------------End of Task 5 ---------------------*/
+
+input, select, textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 1px solid var(--color-grey-mid);
+    border-radius: 0.4rem;
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+    margin-top: 0.4rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(255, 133, 27, 0.3);
+}
+
+fieldset {
+    border: 1px solid var(--color-grey-mid);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    border-radius: 0.8rem;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 var(--space-sm);
+    color: var(--color-primary);
+}
