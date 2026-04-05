@@ -154,4 +154,10 @@ body {
         padding: var(--space-sm) 
     }
 
-    
+    nav a.active {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    font-weight: 600;
+    border-bottom: 3px solid var(--color-accent);
+}
+
