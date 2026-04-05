@@ -167,4 +167,21 @@ body {
 
 /*--------------------------------------- Task 4 ---------------------*/
 
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-lg);
+}
 
+.card {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-mid);
+    padding: var(--space-md);
+    border-radius: 0.8rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.8rem 2.4rem rgba(0, 0, 0, 0.1);
+}
