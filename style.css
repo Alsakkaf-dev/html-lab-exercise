@@ -75,92 +75,69 @@ h4 { font-size: 1.8rem; }
 p { margin-bottom: var(--space-md); }
 small { font-size: 1.2rem; color: var(--color-text-light); }
 
-/*--------------------------------------------------- Task 2 ---------------------*/
-    
-        header {
-          background-color: var(--color-primary);
-          color: var(--color-white);
-          padding: var(--space-lg);
-          display: flex;
-          flex-direction: column; /* Stack name and tagline on mobile */
-          align-items: center;
-          text-align: center;
-          gap: var(--space-sm);
-       }
-
-        nav {
-        background-color: var(--color-secondary);
-        padding: var(--space-sm); /* Padding used to create space around the nav links */
-        }
-
-        main {
-        padding: var(--space-lg); /* Padding used to keep content away from the screen edges */
-        }
-
-        section {
-        margin-bottom: var(--space-lg); /* Margin used to create external space between sections */
-        }
-
-        footer {
-        background-color: var(--color-grey-light);
-        padding: var(--space-lg); /* Padding used for internal spacing within the footer */
-        border-top: 1px solid var(--color-grey-mid);
-        }
-
-        a:link {
-        color: var(--color-secondary);
-        text-decoration: none;
-    }
-
-        a:visited {
-        color: #4b0082;
-         }
-
-        a:hover {
-        color: var(--color-accent);
-        text-decoration: underline;
-         }
-
-        a:active {
-        color: var(--color-accent-soft);
-         }
-
-         
-        nav a, button, figure {
-          border-radius: 0.8rem;
-         }
-
-      figure {
-         box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.15);
-         }
-
-
-
-
-/*--------------------------------------- Task 3 ---------------------*/
-      nav {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-
-    nav ul {
-      display: flex;
-      flex-direction: column; /* Stack links vertically on mobile */
-      align-items: center;
-      gap: var(--space-sm);
-    }
-
-    nav a {
-        display: block;
-        padding: var(--space-sm) 
-    }
-
-    nav a.active {
-    background-color: var(--color-white);
+/* --- Links (Task 2) --- */
+a {
     color: var(--color-primary);
-    font-weight: 600;
-    border-bottom: 3px solid var(--color-accent);
+    text-decoration: none;
+    transition: color var(--transition), background-color var(--transition);
+}
+
+a:hover { color: var(--color-accent); }
+a:active { color: var(--color-accent-hover); }
+
+/* --- Navigation & Header with Flexbox (Task 3) --- */
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-xl) var(--space-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1 { color: var(--color-accent); }
+
+nav {
+    background-color: var(--color-white);
+    padding: var(--space-sm) var(--space-md);
+    box-shadow: var(--box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Task 3: wrap naturally */
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+nav a {
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--border-radius);
+    font-weight: 500;
+}
+
+nav a.active {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+/* --- Main Layout --- */
+main {
+    padding: var(--space-lg) var(--space-md);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*--------------------------------------- Task 4 ---------------------*/
