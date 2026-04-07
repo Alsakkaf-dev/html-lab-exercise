@@ -90,21 +90,28 @@ a:active { color: var(--color-accent-hover); }
 header {
     background-color: var(--color-primary);
     color: var(--color-white);
-    padding: 3rem 5%; /* Adds nice space around the edges */
+    padding: 2.5rem 5%; /* Vertical and Horizontal padding */
     display: flex;
-    justify-content: space-between; /* Name on Left, Photo on Right */
-    align-items: center; /* Vertically centers the text and photo */
+    justify-content: space-between !important; 
+    align-items: center;align-items: center !important; /* This forces vertical center alignment */
 }
 
 .header-content {
-    max-width: 70%; /* Keeps text from hitting the photo */
     text-align: left;
 }
 
 header h1 {
-    margin: 0;
+    margin: 0 !important;
     color: var(--color-accent);
+    line-height: 1;
 }
+
+header p {
+    margin: 0.5rem 0 0 0 !important; /* Tiny bit of space below the name only */
+    line-height: 1.2;
+}
+
+
 
 .header-photo-container img {
     width: 90px;  /* Professional badge size */
@@ -113,16 +120,16 @@ header h1 {
     border: 3px solid var(--color-accent);
     object-fit: cover; /* Stops the photo from looking squashed */
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: block
 }
 
 @media (max-width: 600px) {
     header {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Put photo above text on mobile */
         text-align: center;
         gap: 1.5rem;
     }
     .header-content {
-        max-width: 100%;
         text-align: center;
     }
 }
