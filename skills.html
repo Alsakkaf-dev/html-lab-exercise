@@ -28,68 +28,69 @@
         </ul>
     </nav>
 
-    <!--/////////////////////////////////////  Main  //////////////////////////////////////-->
-   <main> 
+   <main class="sidebar-layout">
+        <div class="main-content">
+            <section id="top-skills">
+                <h2>Top Skills</h2>
+                <p>A proficiency overview of software design and problem-solving principles:</p>
+                <!-- Task 3: Roman numerals, starting from a custom index I -->
+                <ol type="I" start="1" class="styled-list">
+                    <li>Software Design</li>
+                    <li>Problem Solving</li>
+                    <li>Database Management</li>
+                </ol>
+                
+                <h3>Project Development (Countdown)</h3>
+                <p>Status of my current engineering projects:</p>
+                <!-- Task 3: reversed attribute -->
+                <ol reversed class="styled-list">
+                    <li>Final Submission</li>
+                    <li>Testing Phase</li>
+                    <li>Development Phase</li>
+                </ol>
+            </section>
 
-        <!--/////////////////////////////////////  Skills Section  //////////////////////////////////////-->
-        <section id="skills">
-            <h2>Skills & Technologies</h2>
+            <section id="technologies">
+                <h2>Technologies I Use</h2>
+                <p>Current toolkit and technical specialties:</p>
+                <!-- Task 3: Nested Unordered List -->
+                <ul class="nested-skills">
+                    <li>Frontend Development
+                        <ul>
+                            <li>HTML5 Semantic Markup</li>
+                            <li>CSS3 Fundamentals (Learning)</li>
+                        </ul>
+                    </li>
+                    <li>Backend Engineering
+                        <ul>
+                            <li>Java Development</li>
+                            <li>C++ Programming</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
-            <!-- Roman Numerals and Start attribute -->
-            <h3>Top Skills</h3>
-            <ol type="I" start="1">
-                <li>Software Design</li>
-                <li>Problem Solving</li>
-                <li>Database Management</li>
-            </ol>
-
-
-
-            <!-- Nested list -->
-            <h3>Technologies I Use</h3>
-            <ul>
-                <li>Frontend Development
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3 (Learning)</li>
-                    </ul>
-                </li>
-                <li>Backend: Java & C++</li>
-            </ul>
-        </section>
-
-
-        <section id="glossary">
-            <!--  <dl> with 4 pairs -->
-            <h2>Web Development Glossary</h2>
-            <dl>
-                <dt>HTML</dt>
-                <dd>HyperText Markup Language used for structuring web pages.</dd>
-
-                <dt>Browser</dt>
-                <dd>A software application for accessing information on the World Wide Web.</dd>
-
-                <dt>Tag</dt>
-                <dd>The hidden keywords within a web page that define how the browser must format and display the
-                    content.</dd>
-
-                <dt>Semantic HTML</dt>
-                <dd>The use of HTML markup to reinforce the semantics, or meaning, of the information in web pages.</dd>
-            </dl>
-
-
-            <!-- 'reversed' attribute -->
-            <h3>Project Countdown</h3>
-            <ol reversed>
-                <li>Final Submission</li>
-                <li>Testing Phase</li>
-                <li>Development Phase</li>
-            </ol>
-        </section>
-
-
+        <aside class="sidebar">
+            <section id="glossary">
+                <h2>Glossary</h2>
+                <!-- Task 3: Description List with styled class -->
+                <dl class="glossary-dl">
+                    <dt>HTML</dt>
+                    <dd>HyperText Markup Language used for structuring web pages.</dd>
+                    
+                    <dt>Browser</dt>
+                    <dd>A software application for accessing information on the World Wide Web.</dd>
+                    
+                    <dt>Tag</dt>
+                    <dd>Keywords defining how the browser must format and display the content.</dd>
+                    
+                    <dt>Semantic HTML</dt>
+                    <dd>The use of HTML markup to reinforce the meaning of the information.</dd>
+                </dl>
+            </section>
+        </aside>
     </main>
-    <!--/////////////////////////////////////  End of Main  //////////////////////////////////////-->
 
 
 
