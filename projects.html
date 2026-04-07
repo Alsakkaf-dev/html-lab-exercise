@@ -30,39 +30,60 @@
 
 
 
-    <!--/////////////////////////////////////  Main  //////////////////////////////////////-->
-    <main>
-        <section id="Profile Photo">
-            <figure>
-                <img src="images/profile.jpeg" alt="Photo for me" width="200" height="200"
-                    title="Hovering over my photo profile">
-                <!-- The 'align' attribute is deprecated. In modern web design, we use the CSS 'float' or 'flexbox' properties instead. -->
-                <figcaption>
-                    <h5>Figure 1: Mohammed Alsakkaf, Software Engineering Student</h5>
-                </figcaption>
-            </figure>
-            <p>This is my official profile photo. I am currently a student at UTM focusing on Software Engineering. By
-                using the 'align' attribute on the image above, this text wraps around the side of the photo, which was
-                a common way to layout pages in early HTML.</p>
-        </section>
+   <main>
+        <section id="gallery">
+            <h2>Portfolio Showcase</h2>
+            <p>Below is a collection of my professional assets and engineering projects, organized in a modern responsive grid.</p>
 
+            <div class="image-grid">
+                <!-- Profile Image in Figure Card -->
+                <figure class="card">
+                    <img src="images/profile.jpeg" 
+                         alt="Mohammed Alsakkaf - Official Portrait" 
+                         width="600" height="400" 
+                         title="Software Engineering Lead Profile">
+                    <figcaption>Figure 1: Lead Engineer Portfolio Photo</figcaption>
+                </figure>
 
+                <!-- Project Link/Thumbnail with Figure Card -->
+                <figure class="card">
+                    <a href="https://alsakkaf.site/" target="_blank">
+                        <img src="images/project.jpeg" 
+                             alt="Full-view screenshot of my project interface" 
+                             width="600" height="400" 
+                             title="Click to visit my official live site">
+                    </a>
+                    <figcaption>Figure 2: Dynamic Project Platform (Interactive View)</figcaption>
+                </figure>
 
-        <section id="Project Screenshot">
-            <h2>Project Showcase</h2>
-            <p>Click the screenshot below to visit my live project site.</p>
+                <!-- Third slot for grid consistency using placeholder -->
+                <figure class="card">
+                    <img src="https://placehold.co/600x400/c5a059/black?text=Web+UI+Kit" 
+                         alt="Mockup of a web design system" 
+                         width="600" height="400">
+                    <figcaption>Figure 3: System Component Design Visualization</figcaption>
+                </figure>
+            </div>
 
-            <figure>
-                <a href="https://alsakkaf.site/" target="_blank">
-                    <img src="images/project.jpeg" alt="Screenshot of my personal portfolio website" width="800"
-                        height="400">
-                </a>
-                <figcaption>Figure 2: My Personal Portfolio Website (Click to view live)</figcaption>
-            </figure>
-
+            <!-- This section explains the shift from deprecated attributes to modern CSS (Task 5 requirement) -->
+            <section id="project-details" class="card">
+                <h3>Technical Methodology</h3>
+                <!-- Task 5: CSS Floating instead of deprecated align -->
+                <img src="images/profile.jpeg" 
+                     alt="Clean thumbnail version of portfolio pic" 
+                     width="300" height="300" 
+                     class="floated-img">
+                
+                <p>
+                    For the transition to Lab 2, I migrated all image alignment from the legacy <code>align</code> attribute to our new <code>.floated-img</code> CSS class. This separation of concerns creates a cleaner DOM and centralizes our control over visual placement.
+                </p>
+                
+                <p>
+                    By explicitly setting <code>width</code> and <code>height</code> attributes on every media asset, I ensure that our Grid and Sidebar layouts remain stable while images load, fulfilling the best practices for user experience and Core Web Vitals.
+                </p>
+            </section>
         </section>
     </main>
-    <!--/////////////////////////////////////  End of Main  //////////////////////////////////////-->
 
 
 
