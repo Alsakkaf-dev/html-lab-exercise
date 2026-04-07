@@ -29,166 +29,160 @@
 
 
 
-    <!--/////////////////////////////////////  Main  //////////////////////////////////////-->
     <main>
-        <!--/////////////////////////////////////  Academic Section  //////////////////////////////////////-->
+        <section id="results">
+            <h2>Academic Achievements</h2>
+            <p>A full detailed record of courses completed and cumulative performance:</p>
 
-
-        <!-- I will follow this structure to do the Task 4
-        
-        Task 4.1: Section & Table Shell (The outer container).
-        Task 4.2: Table Caption.
-        Task 4.3: The Header (<thead>) with Colspan.
-        Task 4.4: Semester 1 Data (6 courses + Rowspan).
-        Task 4.5: Semester 2 Data (6 courses + Rowspan).
-        Task 4.6: Semester 3 Data (6 courses + Rowspan).
-        Task 4.7: The Footer (<tfoot>) with Totals. -->
-
-        <!-- Task 4: Academic Results Section -->
-        <section id="academic">
-            <h2>Academic Record</h2>
-
-            <!-- Task 4.1: Table Container & Presentation Attributes -->
-            <table>
-
-                <!-- Task 4.2: Table Caption (Accessibility) -->
-                <caption>Transcript of Academic Results: Semesters 1, 2 & 3</caption>
-
-                <!-- Task 4.3: The Header (thead) with Colspan & Scope -->
+            <!-- Applied .styled-table to fulfill Lab requirements -->
+            <table class="styled-table">
+                <caption>UTM Academic Results: Years 1 & 2 & 3 Overview</caption>
                 <thead>
                     <tr>
-                        <!-- colspan="2" merges the first two columns for the header -->
-                        <th scope="col" colspan="2">Course Module & Information</th>
-                        <th scope="col">Credit Hours</th>
-                        <th scope="col">Final Grade</th>
+                        <th scope="col" rowspan="2">Year Level</th>
+                        <th scope="col" colspan="2">Course Breakdown</th>
+                        <th scope="col">Weight (Credits)</th>
+                        <th scope="col">Performance (Grade)</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Status</th>
+                        <th scope="col">Course Title</th>
+                        <th scope="col">Value</th>
+                        <th scope="col">Rating</th>
                     </tr>
                 </thead>
-
-                <!-- Task 4.4: Semester 1 Data (tbody) with Rowspan & Row Headers -->
                 <tbody>
                     <tr>
-                        <!-- rowspan="6" merges this header for all 6 courses in Semester 1 -->
                         <th scope="row" rowspan="6">Semester 1</th>
+                        <td>Core</td>
                         <td>Integrity and Anti-Corruption Course</td>
                         <td>2</td>
                         <td>A+</td>
                     </tr>
                     <tr>
+                        <td>Elective</td>
                         <td>Digital Logic</td>
                         <td>3</td>
                         <td>C+</td>
                     </tr>
                     <tr>
+                        <td>Core</td>
                         <td>Mathematics for Software Engineer</td>
                         <td>3</td>
                         <td>D+</td>
                     </tr>
                     <tr>
+                        <td>Language</td>
                         <td>English Communication Skills</td>
                         <td>2</td>
                         <td>HL</td>
                     </tr>
                     <tr>
+                        <td>Major</td>
                         <td>Database Engineering</td>
                         <td>3</td>
                         <td>C+</td>
                     </tr>
                     <tr>
+                        <td>Intro</td>
                         <td>Fundamental Programming Concepts</td>
                         <td>3</td>
                         <td>C</td>
                     </tr>
 
-                    <!-- Task 4.5: Semester 2 Data with Rowspan & Row Headers -->
                     <tr>
                         <th scope="row" rowspan="6">Semester 2</th>
+                        <td>Technical</td>
                         <td>Network Communications</td>
                         <td>3</td>
                         <td>D</td>
                     </tr>
                     <tr>
+                        <td>Tech</td>
                         <td>Computer Organization and Architecture</td>
                         <td>3</td>
                         <td>C+</td>
                     </tr>
                     <tr>
+                        <td>Science</td>
                         <td>Probability and Statistical Data Analysis</td>
                         <td>3</td>
                         <td>D</td>
                     </tr>
                     <tr>
+                        <td>Coding</td>
                         <td>Advanced Programming</td>
                         <td>4</td>
                         <td>C+</td>
                     </tr>
                     <tr>
+                        <td>Social</td>
                         <td>Malay Language for Communication 2</td>
                         <td>2</td>
                         <td>A-</td>
                     </tr>
                     <tr>
+                        <td>Concept</td>
                         <td>Software Engineering Principles</td>
                         <td>3</td>
                         <td>B</td>
                     </tr>
 
-                    <!-- Task 4.6: Semester 3 Data with Rowspan & Row Headers -->
                     <tr>
                         <th scope="row" rowspan="6">Semester 3</th>
+                        <td>Algo</td>
                         <td>Data Structure and Algorithm</td>
                         <td>3</td>
                         <td>B</td>
                     </tr>
                     <tr>
+                        <td>Quality</td>
                         <td>Software Requirements Engineering</td>
                         <td>3</td>
                         <td>C+</td>
                     </tr>
                     <tr>
+                        <td>Mgmt</td>
                         <td>Software Process and Project Management</td>
                         <td>3</td>
                         <td>B-</td>
                     </tr>
                     <tr>
+                        <td>Design</td>
                         <td>Human Computer Interaction Fundamentals</td>
                         <td>3</td>
                         <td>B-</td>
                     </tr>
                     <tr>
+                        <td>System</td>
                         <td>Operating Systems</td>
                         <td>3</td>
                         <td>A-</td>
                     </tr>
                     <tr>
+                        <td>Skill</td>
                         <td>Football</td>
                         <td>2</td>
                         <td>A</td>
                     </tr>
                 </tbody>
-                <!-- Task 4.7: The Footer (tfoot) with Summary & Strong tags -->
                 <tfoot>
                     <tr>
-                        <!-- colspan="3" merges the Semester, Course, and Credit columns -->
-                        <td colspan="3">Total Credit Hours Earned</td>
+                        <td colspan="3" scope="row"><strong>Cumulative Total Earned</strong></td>
                         <td><strong>45</strong></td>
-                    </tr>
-                    <tr>
-                        <!-- This second footer row shows the average (CGPA) -->
-                        <td colspan="3">Current Cumulative Grade Point Average (CGPA)</td>
-                        <td><strong>2.48</strong></td>
+                        <td><strong>CGPA: 2.48</strong></td>
                     </tr>
                 </tfoot>
-
             </table>
-        </section>
-        <!--/////////////////////////////////////  Goals Section  //////////////////////////////////////-->
-        <section id="goals">
-            <h3>Academic Summary & Goals</h3>
-            <p>My current focus is on maintaining a strong CGPA while mastering core Software Engineering principles. I
-                aim to specialize in backend systems and database architecture.</p>
+
+            <section id="academic-summary">
+                <h3>Academic Summary & Goals</h3>
+                <p>
+                    Currently, I am prioritizing foundational Software Engineering concepts. While building my CGPA, I aim to focus on technical specializations such as <code>backend logic</code> and <code>database optimization</code> to refine my overall technical rating.
+                </p>
+            </section>
         </section>
     </main>
-    <!--/////////////////////////////////////  End of Main  //////////////////////////////////////-->
 
 
 
