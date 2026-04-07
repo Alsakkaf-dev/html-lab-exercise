@@ -30,95 +30,104 @@
 
 
 
-    <!--/////////////////////////////////////  Main  //////////////////////////////////////-->
     <main>
+        <section id="contact-form">
+            <h2>Get In Touch</h2>
+            <p>Please fill out the professional form below. I will respond to your inquiry as soon as possible.</p>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-
-            </p>
-            <form action="#" method="post">
+            <form action="#" method="post" class="styled-form">
                 <fieldset>
-                    <input type="text" id="fullname" name="fullname" placeholder="Your full name" required
-                        maxlength="60">
-                    <p>
-                        <label for="email">Email Address:</label><br>
-                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
-                    </p>
+                    <legend>Professional & Inquiry Details</legend>
 
-                   <p>
-                        <label for="phone">Phone Number:</label><br>
-                        <input type="tel" id="phone" name="phone" placeholder="+60123456789">
-                    </p>
-                    <p>
-                        <label for="years">Years of Experience:</label><br>
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" 
+                               placeholder="Your full name" required maxlength="60">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" 
+                               placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" 
+                               placeholder="+6012-3456789">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="years">Years of Professional Experience:</label>
                         <input type="number" id="years" name="years" min="0" max="50" placeholder="0">
-                    </p>
+                    </div>
 
-                </fieldset>
+                    <div class="form-group">
+                        <label for="date">Preferred Meeting Date:</label>
+                        <input type="date" id="date" name="date">
+                    </div>
 
-                <fieldset>
-                   <legend>Inquiry Details</legend>
-
-                    <p>
-                        <label for="subject">Subject:</label><br>
+                    <div class="form-group">
+                        <label for="subject">Subject of Inquiry:</label>
                         <select id="subject" name="subject">
-                            <optgroup label="General">
-                                <option value="collaboration">Collaboration</option>
+                            <optgroup label="General Opportunities">
+                                <option value="collaboration">Business Collaboration</option>
                                 <option value="hiring">Hiring / Internship</option>
                             </optgroup>
-                            <optgroup label="Technical">
+                            <optgroup label="Technical Feedback">
                                 <option value="feedback">Website Feedback</option>
-                                <option value="bug">Report a Bug</option>
+                                <option value="bug">Report a Technical Bug</option>
                             </optgroup>
                         </select>
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="experience">Experience Level (1-10):</label><br>
+                    <div class="form-group">
+                        <label for="experience">Current Technical Expertise Level (1-10):</label>
                         <input type="range" id="experience" name="experience" min="1" max="10">
-                    </p>
+                    </div>
 
-                    <p>
-                        <label for="date">Preferred Meeting Date:</label><br>
-                        <input type="date" id="date" name="date">
-                    </p>
+                    <div class="form-group">
+                        <strong>Preferred Method of Contact:</strong><br>
+                        <div class="option-group">
+                            <input type="radio" id="r_email" name="contact_pref" value="email" checked required>
+                            <label for="r_email">Official Email</label>
+                            
+                            <input type="radio" id="r_phone" name="contact_pref" value="phone">
+                            <label for="r_phone">Mobile Phone</label>
+                            
+                            <input type="radio" id="r_other" name="contact_pref" value="other">
+                            <label for="r_other">Other Channels</label>
+                        </div>
+                    </div>
 
-                    <p>
-                        <strong>Preferred Contact Method:</strong><br>
-                        <input type="radio" id="r_email" name="contact_pref" value="email" checked>
-                        <label for="r_email">Email</label>
-                        <input type="radio" id="r_phone" name="contact_pref" value="phone">
-                        <label for="r_phone">Phone</label>
-                        <input type="radio" id="r_other" name="contact_pref" value="other">
-                        <label for="r_other">Other</label>
-                    </p>
+                    <div class="form-group">
+                        <strong>Specialized Technical Interests:</strong><br>
+                        <div class="option-group">
+                            <input type="checkbox" id="web" name="interest" value="web">
+                            <label for="web">Web Engineering</label>
+                            
+                            <input type="checkbox" id="app" name="interest" value="app">
+                            <label for="app">Mobile Ecosystems</label>
+                            
+                            <input type="checkbox" id="ai" name="interest" value="ai">
+                            <label for="ai">AI / Machine Learning</label>
+                        </div>
+                    </div>
 
-                    <p>
-                        <strong>Interests:</strong><br>
-                        <input type="checkbox" id="web" name="interest" value="web">
-                        <label for="web">Web Development</label>
-                        <input type="checkbox" id="app" name="interest" value="app">
-                        <label for="app">Mobile Apps</label>
-                        <input type="checkbox" id="ai" name="interest" value="ai">
-                        <label for="ai">Artificial Intelligence</label>
-                    </p>
-                    <p>
-                        <label for="message">Your Message:</label><br>
-                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
-                    </p>
+                    <div class="form-group">
+                        <label for="message">Detailed Message:</label>
+                        <textarea id="message" name="message" rows="5" 
+                                  placeholder="Type your professional inquiry here..." required></textarea>
+                    </div>
 
-
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Send Message</button>
+                        <button type="reset" class="btn-reset">Reset Form</button>
+                    </div>
                 </fieldset>
-
-                <button type="submit">Send Message</button>
-
-
             </form>
         </section>
-
     </main>
-    <!--/////////////////////////////////////  End of Main  //////////////////////////////////////-->
 
 
 
